@@ -1,3 +1,4 @@
+# Sheng-Hung Kuan
 from unittest import TestCase
 
 from HMM import HMM
