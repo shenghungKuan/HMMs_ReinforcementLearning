@@ -2,7 +2,7 @@
 from unittest import TestCase
 
 from HMM import HMM
-
+import Approach as app
 
 class submission(TestCase):
 
@@ -24,4 +24,8 @@ class submission(TestCase):
                 if len(o) <= 1:
                     continue
                 h.viterbi(o)
+
+    def test_approach(self):
+        app.approach(10)
+
 
