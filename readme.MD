@@ -2,8 +2,6 @@
 
 ## HMM.py (Hidden Markov Models)
 
-In this assignment you'll be implementing two algorithms associated with Hidden Markov Models.
-
 two-english.trans and two-english.emit represent a two-state HMM that was learned from English words. This HMM has two states: Consonant and Vowel.
 
 The .trans files contain the transition probabilities. two_english models the transition between 'C' for Consonant and 'V' for Vowel in English. There's also a '#' which is used to represent the starting state.
