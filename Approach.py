@@ -3,22 +3,6 @@ from random import randint
 from random import random
 from random import choices
 
-
-# Approach.py
-
-
-# This program uses reinforcement learning to determine the optimal policy
-# for Approach.
-# Recall that approach works like this:
-# Both players agree on a limit n.
-# Player 1 rolls first. They go until they either exceed n or hold.
-# Then player 2 rolls. They go until they either exceed n or beat player 1's score.
-# The player who is closest to n without going over wins.
-# Note:
-# We can reduce this to the problem of player 1 choosing the best value at which to hold.
-# This is called a policy; once we know the best number to hold at, we can act optimally.
-
-
 def approach(n):
     q_table = [[random() / 100.0, random() / 100.0] for i in range(n + 1)]  # 0: roll, 1: hold
     epsilon = 0.1
