@@ -1,14 +1,14 @@
-# HMMs and Reinforcement Learning
+# Natural Language Processing and Reinforcement Learning
 
-## HMM.py (Hidden Markov Models)
+## HMM.py (Natural Language Processing with Hidden Markov Model)
 
 two-english.trans and two-english.emit represent a two-state HMM that was learned from English words. This HMM has two states: Consonant and Vowel.
 
-The .trans files contain the transition probabilities. two_english models the transition between 'C' for Consonant and 'V' for Vowel in English. There's also a '#' which is used to represent the starting state.
+The trans files contain the transition probabilities. two_english models the transition between 'C' for Consonant and 'V' for Vowel in English. There's also a '#' which is used to represent the starting state.
 
-The .emit files contain the probability of emitting a particular output from that state. These are learned from data, and so contain errors (especially two_english).
+The emit files contain the probability of emitting a particular output from that state. These are learned from data, and so contain errors (especially two_english).
 
-The .trans/.emit files are for the Brown corpus. These represent an HMM for recognizing parts of speech. This problem is larger, with 12 states and lots of possible emissions. 
+The trans/emit files are for the Brown corpus. These represent an HMM for recognizing parts of speech. This problem is larger, with 12 states and lots of possible emissions. 
 
 ambiguous_sents.obs and ambiguous_sents.tagged.obs are used for testing the Viterbi implementation.
 
